@@ -1,81 +1,30 @@
-﻿using Caliburn.Micro;
-using PoeTradeHub.UI.Models;
+﻿using System.Windows;
+using Caliburn.Micro;
 
 namespace PoeTradeHub.UI.ViewModels
 {
     public class ShellViewModel : Conductor<object>
     {
-        private string _firstName = "qhris";
-        private string _lastName;
-        private BindableCollection<PersonModel> _people = new BindableCollection<PersonModel>();
-        private PersonModel _selectedPerson;
+        private readonly IWindowManager _windowManager;
+        private readonly ConfigurationViewModel _configurationViewModel;
 
-        public ShellViewModel()
+        public ShellViewModel(IWindowManager windowManager, ConfigurationViewModel configurationViewModel)
         {
-            People.Add(new PersonModel { FirstName = "Tim", LastName = "Corey" });
-            People.Add(new PersonModel { FirstName = "Bill", LastName = "Jones" });
-            People.Add(new PersonModel { FirstName = "Christoffer", LastName = "Hjalmarsson" });
+            _windowManager = windowManager;
+            _configurationViewModel = configurationViewModel;
         }
 
-        public string FirstName
+        public void ShowConfiguration()
         {
-            get => _firstName;
-            set
+            if (!_configurationViewModel.IsActive)
             {
-                _firstName = value;
-                NotifyOfPropertyChange(() => FirstName);
-                NotifyOfPropertyChange(() => FullName);
+                _windowManager.ShowWindow(_configurationViewModel);
             }
         }
 
-        public string LastName
+        public void ExitApplication()
         {
-            get => _lastName;
-            set
-            {
-                _lastName = value;
-                NotifyOfPropertyChange(() => LastName);
-                NotifyOfPropertyChange(() => FullName);
-            }
-        }
-
-        public string FullName =>
-            $"{FirstName} {LastName}";
-
-        public BindableCollection<PersonModel> People
-        {
-            get => _people;
-            set { _people = value; }
-        }
-
-        public PersonModel SelectedPerson
-        {
-            get => _selectedPerson;
-            set
-            {
-                _selectedPerson = value;
-                NotifyOfPropertyChange(() => SelectedPerson);
-            }
-        }
-
-        public bool CanClearText(string firstName, string lastName) =>
-            !string.IsNullOrWhiteSpace(firstName) ||
-            !string.IsNullOrWhiteSpace(lastName);
-
-        public void ClearText(string firstName, string lastName)
-        {
-            FirstName = "";
-            LastName = "";
-        }
-
-        public void LoadPageOne()
-        {
-            ActivateItem(new PageOneViewModel());
-        }
-
-        public void LoadPageTwo()
-        {
-            ActivateItem(new PageTwoViewModel());
+            Application.Current.Shutdown();
         }
     }
 }

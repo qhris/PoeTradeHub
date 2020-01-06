@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PoeTradeHub.UI.Views
 {
     /// <summary>
-    /// Interaction logic for PageTwoView.xaml
+    /// Interaction logic for ConfigurationView.xaml
     /// </summary>
-    public partial class PageTwoView : UserControl
+    public partial class ConfigurationView : Window
     {
-        public PageTwoView()
+        public ConfigurationView()
         {
             InitializeComponent();
         }

@@ -30,16 +30,35 @@ namespace PoeTradeHub.UI
             Initialize();
 
             _tradeAPI = new OfficialTradeAPI("Metamorph");
-            HotkeyManager.Current.AddOrReplace(ItemInfoHotkeyId, Key.C, ModifierKeys.Control, OnItemInfo);
+
+            EnableGlobalHotkeys();
+            
             InputSimulator = new InputSimulator();
         }
 
         InputSimulator InputSimulator { get; }
 
+        private void EnableGlobalHotkeys()
+        {
+            try
+            {
+                HotkeyManager.Current.AddOrReplace(ItemInfoHotkeyId, Key.C, ModifierKeys.Control, OnItemInfo);
+            }
+            catch (HotkeyAlreadyRegisteredException)
+            {
+                return;
+            }
+        }
+
+        private void DisableGlobalHotkeys()
+        {
+            HotkeyManager.Current.Remove(ItemInfoHotkeyId);
+        }
+
         private void OnItemInfo(object sender, HotkeyEventArgs e)
         {
             // Remove the hotkey before sending the keystroke to the application so we don't infinitely recurse.
-            HotkeyManager.Current.Remove(ItemInfoHotkeyId);
+            DisableGlobalHotkeys();
 
             // Global hotkeys eat the keyboard stroke from the application so we need to send it again.
             InputSimulator.Keyboard.ModifiedKeyStroke(VirtualKeyCode.LCONTROL, VirtualKeyCode.VK_C);
@@ -53,7 +72,7 @@ namespace PoeTradeHub.UI
                 timer.Start();
             }
 
-            HotkeyManager.Current.AddOrReplace(ItemInfoHotkeyId, Key.C, ModifierKeys.Control, OnItemInfo);
+            EnableGlobalHotkeys();
         }
 
         private async void OnAcquiredItemInfo(object sender, EventArgs e)

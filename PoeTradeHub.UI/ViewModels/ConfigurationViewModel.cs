@@ -2,7 +2,7 @@
 
 namespace PoeTradeHub.UI.ViewModels
 {
-    public class PageTwoViewModel : Screen
+    public class ConfigurationViewModel : Screen
     {
     }
 }
