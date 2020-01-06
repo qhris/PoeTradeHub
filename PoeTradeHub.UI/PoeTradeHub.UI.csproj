@@ -132,7 +132,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PoeTradeHub.Core\PoeTradeHub.Core.csproj">
+      <Project>{2c5743f5-1000-4f4a-a415-595c1cd348b7}</Project>
+      <Name>PoeTradeHub.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoeTradeHub\PoeTradeHub.csproj">
+      <Project>{dd894676-5483-4e31-a7d3-5cefab1ed9ae}</Project>
+      <Name>PoeTradeHub</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Views\PageOneView.xaml">
       <SubType>Designer</SubType>

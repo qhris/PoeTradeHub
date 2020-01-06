@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,6 +13,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NHotkey;
 using NHotkey.Wpf;
+using PoeTradeHub.TradeAPI;
+using PoeTradeHub.TradeAPI.Models;
+using PoeTradeHub.TradeAPI.OfficialTrade;
 using PoeTradeHub.UI.Utils;
 using PoeTradeHub.UI.ViewModels;
 using WindowsInput;
@@ -24,13 +25,16 @@ namespace PoeTradeHub.UI
 {
     public class Bootstrapper : BootstrapperBase
     {
-        const string ItemInfoHotkeyId = "ItemInfo";
-        const string GameWindowTitle = "Path of Exile";
+        private ITradeAPI _tradeAPI;
+
+        private const string ItemInfoHotkeyId = "ItemInfo";
+        private const string GameWindowTitle = "Path of Exile";
 
         public Bootstrapper()
         {
             Initialize();
 
+            _tradeAPI = new OfficialTradeAPI("Metamorph");
             HotkeyManager.Current.AddOrReplace(ItemInfoHotkeyId, Key.C, ModifierKeys.Control, OnItemInfo);
             InputSimulator = new InputSimulator();
         }
@@ -89,7 +93,7 @@ namespace PoeTradeHub.UI
 
                     if (itemRarity == "Unique")
                     {
-                        IEnumerable<FetchResult> listings = await QueryUniqueItemListing(itemType, itemName);
+                        IList<ItemRecord> listings = await QueryUniqueItemListing(itemType, itemName);
                         var builder = new StringBuilder();
 
                         foreach (var listing in listings)
@@ -122,112 +126,15 @@ namespace PoeTradeHub.UI
             }
         }
 
-        class FetchResultFrame
+        private async Task<IList<ItemRecord>> QueryUniqueItemListing(string itemType, string itemName)
         {
-            public IList<FetchResult> Result { get; set; }
-        }
-
-        class FetchResult
-        {
-            public string Id { get; set; }
-            public ItemListing Listing { get; set; }
-            public ItemData Item { get; set; }
-        }
-
-        class ItemListing
-        {
-            public string Method { get; set; }
-            public DateTime Indexed { get; set; }
-            public ItemListingStash Stash { get; set; }
-            public string Whisper { get; set; }
-            public ItemListingAccount Account { get; set; }
-            public ItemListingPrice Price { get; set; }
-        }
-
-        class ItemListingStash
-        {
-            public string Name { get; set; }
-            public int X { get; set; }
-            public int Y { get; set; }
-        }
-
-        class ItemListingAccount
-        {
-            public string Name { get; set; }
-            public string LastCharacterName { get; set; }
-            public string Language { get; set; }
-        }
-
-        class ItemListingPrice
-        {
-            public string Type { get; set; }
-            public int Amount { get; set; }
-            public string Currency { get; set; }
-        }
-
-        class ItemData
-        {
-            public bool Verified { get; set; }
-            [JsonProperty("w")]
-            public int Width { get; set; }
-            [JsonProperty("h")]
-            public int Height { get; set; }
-            public string Icon { get; set; }
-            public string League { get; set; }
-            public string Name { get; set; }
-            public string TypeLine { get; set; }
-            public bool Identified { get; set; }
-            [JsonProperty("ilvl")]
-            public int ItemLevel { get; set; }
-        }
-
-        private async Task<IEnumerable<FetchResult>> QueryUniqueItemListing(string itemType, string itemName)
-        {
-            const string QueryUrl = "https://www.pathofexile.com/api/trade/search/Metamorph";
-            const string FetchUrl = "https://www.pathofexile.com/api/trade/fetch";
-
-            JObject query = JObject.FromObject(new
+            var query = new ItemQuery()
             {
-                query = new
-                {
-                    status = new
-                    {
-                        option = "online",
-                    },
-                    name = itemName,
-                    type = itemType,
-                },
-                sort = new
-                {
-                    price = "asc",
-                },
-            });
+                Name = itemName,
+                BaseType = itemType,
+            };
 
-            // MessageBox.Show(query.ToString(), "Query", MessageBoxButton.OK, MessageBoxImage.Information);
-
-            using (var client = new HttpClient())
-            {
-                var requestContent = new StringContent(query.ToString(), Encoding.UTF8, "application/json");
-                HttpResponseMessage response = await client.PostAsync(QueryUrl, requestContent);
-
-                string responseData = await response.Content.ReadAsStringAsync();
-                JObject responseJson = JObject.Parse(responseData);
-                var result = responseJson["result"] as JArray;
-                var urlQuery = string.Join(",", result.Select(x => x.Value<string>()).Take(10).ToArray());
-                var urlQueryId = responseJson["id"];
-
-                var fetchUrl = $"{FetchUrl}/{urlQuery}?query={urlQueryId}";
-                // MessageBox.Show(fetchUrl, "Url", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                HttpResponseMessage fetchResponse = await client.GetAsync(fetchUrl);
-                string fetchResponseData = await fetchResponse.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<FetchResultFrame>(fetchResponseData).Result;
-
-                // JObject fetchResponseJson = JObject.Parse(fetchResponseData);
-                // MessageBox.Show(fetchResponseData, $"Response: {fetchResponse.StatusCode}", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-
-            return new List<FetchResult>();
+            return await _tradeAPI.QueryPrice(query);
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
