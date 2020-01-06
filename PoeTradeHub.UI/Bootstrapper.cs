@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
-using Caliburn.Micro;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using NHotkey;
 using NHotkey.Wpf;
 using PoeTradeHub.TradeAPI;
@@ -23,7 +18,7 @@ using WindowsInput.Native;
 
 namespace PoeTradeHub.UI
 {
-    public class Bootstrapper : BootstrapperBase
+    public class Bootstrapper : AutofacBootstrapper
     {
         private ITradeAPI _tradeAPI;
 
