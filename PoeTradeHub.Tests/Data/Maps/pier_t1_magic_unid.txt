@@ -1,0 +1,10 @@
+Rarity: Magic
+Pier Map
+--------
+Map Tier: 1
+--------
+Item Level: 78
+--------
+Unidentified
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

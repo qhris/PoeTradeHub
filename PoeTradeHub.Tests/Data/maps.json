@@ -1,0 +1,132 @@
+[
+    {
+        "file": "Maps/acid_caverns_t15_rare_corrupt.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Rare",
+            "baseType": "Acid Caverns Map",
+            "name": "Terror Oubliette",
+            "mapTier": 15,
+            "isCorrupted": true,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/arena_t3_rare_corrupt.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Rare",
+            "baseType": "Arena Map",
+            "name": "Agony View",
+            "mapTier": 3,
+            "isCorrupted": true,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/desert_t2_normal_superior.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Desert Map",
+            "name": "Superior Desert Map",
+            "mapTier": 2,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/jungle_valley_t1_magic.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Magic",
+            "baseType": "Jungle Valley Map",
+            "name": "Twinned Jungle Valley Map of Smothering",
+            "mapTier": 1,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/jungle_valley_t1_normal.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Jungle Valley Map",
+            "name": "Jungle Valley Map",
+            "mapTier": 1,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/jungle_valley_t8_normal.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Jungle Valley Map",
+            "name": "Jungle Valley Map",
+            "mapTier": 8,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/maze_t14_rare.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Rare",
+            "baseType": "Maze Map",
+            "name": "Horror Oubliette",
+            "mapTier": 14,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/pier_t1_magic_unid.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Magic",
+            "baseType": "Pier Map",
+            "name": "Pier Map",
+            "mapTier": 1,
+            "isCorrupted": false,
+            "isIdentified": false
+        }
+    },
+    {
+        "file": "Maps/sepulchre_t15_rare_unid_corrupt.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Rare",
+            "baseType": "Sepulchre Map",
+            "name": "Superior Sepulchre Map",
+            "mapTier": 15,
+            "isCorrupted": true,
+            "isIdentified": false
+        }
+    },
+    {
+        "file": "Maps/wharf_t1_magic.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Magic",
+            "baseType": "Wharf Map",
+            "name": "Resistant Wharf Map of Deadliness",
+            "mapTier": 1,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    }
+]

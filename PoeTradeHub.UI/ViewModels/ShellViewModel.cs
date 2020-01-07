@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -94,64 +93,54 @@ namespace PoeTradeHub.UI.ViewModels
 
         private async Task OnAcquiredItemInfo()
         {
-            var itemData = Clipboard.GetText().Split(new string[] { "\r\n", "\n" },
-                StringSplitOptions.RemoveEmptyEntries);
-            if (itemData.Length > 3 && itemData[0].StartsWith("Rarity:"))
+            var parser = new ItemParser();
+            ItemInformation item;
+
+            try
             {
-                var rarityMatch = Regex.Match(itemData[0], @"^Rarity: (.*)$");
-                if (rarityMatch.Success)
+                item = parser.Parse(Clipboard.GetText());
+            }
+            catch (InvalidItemException)
+            {
+                // TODO: Log error and promt user that we failed to parse the item (need to patch asap).
+                return;
+            }
+
+            await DisplayItemPrice(item);   
+        }
+
+        private async Task DisplayItemPrice(ItemInformation item)
+        {
+            var parser = new ItemParser();
+
+            var viewModel = new ItemDebugViewModel();
+            viewModel.ClipboardData = Clipboard.GetText();
+            viewModel.ItemData = parser.DebugItem(item);
+
+            _windowManager.ShowWindow(viewModel);
+            // MessageBox.Show(parser.DebugItem(item), "Item", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            return;
+
+            if (item.Rarity == ItemRarity.Unique)
+            {
+                IList<ItemRecord> listings = await QueryUniqueItemListing(item.BaseType, item.Name);
+                var builder = new StringBuilder();
+
+                foreach (var listing in listings)
                 {
-                    var namedItems = new HashSet<string>
+                    if (listing.Listing.Price != null)
                     {
-                        "Normal",
-                        "Magic",
-                        "Rare",
-                        "Unique",
-                    };
-
-                    string itemRarity = rarityMatch.Groups[1].Value;
-                    string itemType = rarityMatch.Groups[1].Value;
-                    string itemName = itemData[1];
-
-
-                    if (namedItems.Contains(itemRarity))
-                    {
-                        itemType = itemData[2];
-                        itemName = itemData[1];
+                        builder.AppendLine(
+                            $"Item: {listing.Item.Name}, " +
+                            $"Price: {listing.Listing.Price.Amount} {listing.Listing.Price.Currency}, " +
+                            $"Account: {listing.Listing.Account.Name}, " +
+                            $"Character: {listing.Listing.Account.LastCharacterName}, " +
+                            $"Stash: {listing.Listing.Stash?.Name} {{{listing.Listing?.Stash.X}, {listing.Listing?.Stash.Y}}}");
                     }
-
-                    if (itemRarity == "Unique")
-                    {
-                        IList<ItemRecord> listings = await QueryUniqueItemListing(itemType, itemName);
-                        var builder = new StringBuilder();
-
-                        foreach (var listing in listings)
-                        {
-                            if (listing.Listing.Price != null)
-                            {
-                                builder.AppendLine(
-                                    $"Item: {listing.Item.Name}, " +
-                                    $"Price: {listing.Listing.Price.Amount} {listing.Listing.Price.Currency}, " +
-                                    $"Account: {listing.Listing.Account.Name}, " +
-                                    $"Character: {listing.Listing.Account.LastCharacterName}, " +
-                                    $"Stash: {listing.Listing.Stash?.Name} {{{listing.Listing?.Stash.X}, {listing.Listing?.Stash.Y}}}");
-                            }
-
-                            // builder.AppendLine(listing?.Listing?.Whisper);
-                            // builder.AppendLine();
-                        }
-
-                        MessageBox.Show(builder.ToString(), "Price", MessageBoxButton.OK, MessageBoxImage.Information);
-                    }
-
-                    //var builder = new StringBuilder();
-                    //builder.AppendLine($"Type: {itemType}");
-                    //builder.AppendLine($"Name: {itemName}");
-
-                    //MessageBox.Show(builder.ToString(), "Item", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
 
-                // MessageBox.Show(Clipboard.GetText(), "Item", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(builder.ToString(), "Price", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 

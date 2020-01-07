@@ -1,0 +1,14 @@
+Rarity: Rare
+Superior Sepulchre Map
+--------
+Map Tier: 15
+Item Quantity: +20% (augmented)
+Quality: +20% (augmented)
+--------
+Item Level: 84
+--------
+Unidentified
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.
+--------
+Corrupted

@@ -1,0 +1,34 @@
+﻿<Window x:Class="PoeTradeHub.UI.Views.ItemDebugView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Topmost="True"
+        Title="Debug Item Data" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" FontWeight="Bold">Clipboard Data</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold">Parsed Data</TextBlock>
+
+        <ScrollViewer Grid.Row="2" Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <TextBox AcceptsReturn="True"
+                     IsReadOnly="True"
+                     Text="{Binding ClipboardData}"/>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Row="2" Grid.Column="2" VerticalScrollBarVisibility="Auto">
+            <TextBox AcceptsReturn="True"
+                     IsReadOnly="True"
+                     Text="{Binding ItemData}"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

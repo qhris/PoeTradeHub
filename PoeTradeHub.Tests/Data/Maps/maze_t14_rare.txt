@@ -1,0 +1,19 @@
+Rarity: Rare
+Horror Oubliette
+Maze Map
+--------
+Map Tier: 14
+Item Quantity: +59% (augmented)
+Item Rarity: +30% (augmented)
+Monster Pack Size: +19% (augmented)
+Quality: +10% (augmented)
+--------
+Item Level: 84
+--------
+Area has patches of shocking ground
+Area is inhabited by Demons
+Players are Cursed with Vulnerability
+26% more Monster Life
+Monsters cannot be Stunned
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

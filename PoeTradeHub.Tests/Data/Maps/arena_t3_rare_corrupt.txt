@@ -1,0 +1,29 @@
+Rarity: Rare
+Agony View
+Arena Map
+--------
+Map Tier: 3
+Item Quantity: +122% (augmented)
+Item Rarity: +69% (augmented)
+Monster Pack Size: +44% (augmented)
+Quality: +6% (augmented)
+--------
+Item Level: 72
+--------
+28% more Rare Monsters
+18% increased Monster Movement Speed
+20% increased Monster Attack Speed
+20% increased Monster Cast Speed
+Monsters Poison on Hit
+Monsters deal 61% extra Damage as Cold
+Rare Monsters each have a Nemesis Mod
+Monsters have 30% increased Accuracy Rating
+Monsters gain a Power Charge on Hit
+Area is inhabited by Ghosts
+Players have 20% less Armour
+Players have 20% reduced Chance to Block
+Player chance to Dodge is Unlucky
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.
+--------
+Corrupted

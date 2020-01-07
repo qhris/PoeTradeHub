@@ -1,0 +1,16 @@
+Rarity: Magic
+Resistant Wharf Map of Deadliness
+--------
+Map Tier: 1
+Item Quantity: +29% (augmented)
+Item Rarity: +17% (augmented)
+Monster Pack Size: +11% (augmented)
+--------
+Item Level: 72
+--------
+Monsters have 176% increased Critical Strike Chance
++30% to Monster Critical Strike Multiplier
++15% Monster Chaos Resistance
++20% Monster Elemental Resistance
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

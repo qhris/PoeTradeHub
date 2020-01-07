@@ -1,0 +1,14 @@
+Rarity: Magic
+Twinned Jungle Valley Map of Smothering
+--------
+Map Tier: 1
+Item Quantity: +35% (augmented)
+Item Rarity: +20% (augmented)
+Monster Pack Size: +13% (augmented)
+--------
+Item Level: 70
+--------
+Area contains two Unique Bosses
+Players have 20% less Recovery Rate of Life and Energy Shield
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

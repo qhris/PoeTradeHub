@@ -1,0 +1,10 @@
+Rarity: Normal
+Superior Desert Map
+--------
+Map Tier: 2
+Item Quantity: +5% (augmented)
+Quality: +5% (augmented)
+--------
+Item Level: 72
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

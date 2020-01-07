@@ -1,0 +1,24 @@
+Rarity: Rare
+Terror Oubliette
+Acid Caverns Map
+--------
+Map Tier: 15
+Item Quantity: +127% (augmented)
+Item Rarity: +63% (augmented)
+Monster Pack Size: +41% (augmented)
+Quality: +20% (augmented)
+--------
+Item Level: 84
+--------
+Area is inhabited by Humanoids
+Players have Elemental Equilibrium
+Monsters deal 90% extra Damage as Fire
+Monsters deal 103% extra Damage as Cold
+Monsters deal 106% extra Damage as Lightning
+Monsters gain a Frenzy Charge on Hit
+Players gain 50% reduced Flask Charges
+Players have Point Blank
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.
+--------
+Corrupted
