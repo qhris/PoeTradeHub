@@ -22,7 +22,9 @@ namespace PoeTradeHub.UI.ViewModels
         private readonly ITradeAPI _tradeAPI;
         private InputSimulator _inputSimulator;
 
-        private const string ItemInfoHotkeyId = "ItemInfo";
+        private const string ItemDebugHotkeyId = "Item:Debug";
+        private const string ItemPriceHotkeyId = "Item:Price";
+
         private const string GameWindowTitle = "Path of Exile";
 
         public ShellViewModel(
@@ -54,7 +56,8 @@ namespace PoeTradeHub.UI.ViewModels
         {
             try
             {
-                HotkeyManager.Current.AddOrReplace(ItemInfoHotkeyId, Key.C, ModifierKeys.Control, OnItemInfo);
+                HotkeyManager.Current.AddOrReplace(ItemPriceHotkeyId, Key.D, ModifierKeys.Control, OnPriceItem);
+                HotkeyManager.Current.AddOrReplace(ItemDebugHotkeyId, Key.D, ModifierKeys.Control | ModifierKeys.Shift, OnDebugItem);
             }
             catch (HotkeyAlreadyRegisteredException)
             {
@@ -64,11 +67,53 @@ namespace PoeTradeHub.UI.ViewModels
 
         private void DisableGlobalHotkeys()
         {
-            HotkeyManager.Current.Remove(ItemInfoHotkeyId);
+            HotkeyManager.Current.Remove(ItemPriceHotkeyId);
+            HotkeyManager.Current.Remove(ItemDebugHotkeyId);
         }
 
-        private async void OnItemInfo(object sender, HotkeyEventArgs e)
+        private async void OnDebugItem(object sender, HotkeyEventArgs e)
         {
+            await GameClipboardAction(async (clipboardData) =>
+            {
+                var parser = new ItemParser();
+                ItemInformation item = await Task.Run(() => parser.Parse(clipboardData));
+
+                var viewModel = new ItemDebugViewModel();
+                viewModel.ClipboardData = clipboardData;
+                viewModel.ItemData = parser.DebugItem(item);
+
+                _windowManager.ShowWindow(viewModel);
+            });
+        }
+
+        private async void OnPriceItem(object sender, HotkeyEventArgs e)
+        {
+            await GameClipboardAction(async (clipboardData) =>
+            {
+                var parser = new ItemParser();
+                ItemInformation item;
+
+                try
+                {
+                    item = parser.Parse(Clipboard.GetText());
+                }
+                catch (InvalidItemException)
+                {
+                    // TODO: Log error and promt user that we failed to parse the item (need to patch asap).
+                    return;
+                }
+
+                await DisplayItemPrice(item);
+            });
+        }
+
+        private async Task GameClipboardAction(Func<string, Task> clipboardAction)
+        {
+            if (clipboardAction == null)
+            {
+                throw new ArgumentNullException(nameof(Clipboard));
+            }
+
             // Remove the hotkey before sending the keystroke to the application so we don't infinitely recurse.
             DisableGlobalHotkeys();
 
@@ -80,7 +125,7 @@ namespace PoeTradeHub.UI.ViewModels
                 try
                 {
                     await Task.Delay(50);
-                    await OnAcquiredItemInfo();
+                    await clipboardAction(Clipboard.GetText());
                 }
                 catch (Exception ex)
                 {
@@ -91,37 +136,8 @@ namespace PoeTradeHub.UI.ViewModels
             EnableGlobalHotkeys();
         }
 
-        private async Task OnAcquiredItemInfo()
-        {
-            var parser = new ItemParser();
-            ItemInformation item;
-
-            try
-            {
-                item = parser.Parse(Clipboard.GetText());
-            }
-            catch (InvalidItemException)
-            {
-                // TODO: Log error and promt user that we failed to parse the item (need to patch asap).
-                return;
-            }
-
-            await DisplayItemPrice(item);   
-        }
-
         private async Task DisplayItemPrice(ItemInformation item)
         {
-            var parser = new ItemParser();
-
-            var viewModel = new ItemDebugViewModel();
-            viewModel.ClipboardData = Clipboard.GetText();
-            viewModel.ItemData = parser.DebugItem(item);
-
-            _windowManager.ShowWindow(viewModel);
-            // MessageBox.Show(parser.DebugItem(item), "Item", MessageBoxButton.OK, MessageBoxImage.Information);
-
-            return;
-
             if (item.Rarity == ItemRarity.Unique)
             {
                 IList<ItemRecord> listings = await QueryUniqueItemListing(item.BaseType, item.Name);
@@ -140,7 +156,7 @@ namespace PoeTradeHub.UI.ViewModels
                     }
                 }
 
-                MessageBox.Show(builder.ToString(), "Price", MessageBoxButton.OK, MessageBoxImage.Information);
+                _windowManager.ShowWindow(new ItemListingViewModel(listings));
             }
         }
 
