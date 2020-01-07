@@ -7,7 +7,7 @@
         /// <summary>
         /// Gets the amount of currency the item was listed for.
         /// </summary>
-        public int Amount { get; set; }
+        public float Amount { get; set; }
 
         /// <summary>
         /// Gets the type of currency the item was listed for.
