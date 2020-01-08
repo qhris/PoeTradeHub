@@ -16,6 +16,7 @@ namespace PoeTradeHub.Tests
             Assert.Equal(expected.IsCorrupted, result.IsCorrupted);
             Assert.Equal(expected.MapTier, result.MapTier);
             Assert.Equal(expected.BaseType, result.BaseType);
+            Assert.Equal(expected.IsBlighted ?? false, result.IsBlighted ?? false);
         }
     }
 }

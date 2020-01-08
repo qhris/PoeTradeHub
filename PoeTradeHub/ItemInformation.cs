@@ -19,6 +19,7 @@ namespace PoeTradeHub
         public string FlavorText { get; set; }
         public IList<string> RawAffixes { get; set; }
         public int? Quality { get; set; }
+        public bool? IsBlighted { get; set; }
         internal IList<ItemAffix> Affixes { get; set; }
         internal IList<IList<ItemAffix>> GroupedAffixes { get; set; }
     }

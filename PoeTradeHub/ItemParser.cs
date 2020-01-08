@@ -108,10 +108,12 @@ namespace PoeTradeHub
                         var prefixCount = item.GroupedAffixes.Count - Convert.ToInt32(hasSuffix);
                         if (prefixCount > 0)
                         {
-                            item.BaseType = Regex.Replace(item.BaseType, @"^\w+\s+", string.Empty);
+                            item.BaseType = Regex.Replace(item.BaseType, @"^\w[\w\']+\s+", string.Empty);
                         }
                     }
                 }
+
+                item.IsBlighted = Regex.IsMatch(item.BaseType, @"^Blighted\s+.*$");
             }
 
             return item;
@@ -268,9 +270,31 @@ namespace PoeTradeHub
                 return true;
             };
 
+            Func<IEnumerable<IList<string>>, int> skipImplicitGroup = groupsToCheck =>
+            {
+                int currentIndex = 0;
+
+                foreach (var group in groupsToCheck)
+                {
+                    foreach (var line in group)
+                    {
+                        if (line.EndsWith("(implicit)"))
+                        {
+                            return currentIndex + 1;
+                        }
+                    }
+
+                    currentIndex += 1;
+                }
+
+                return 0;
+            };
+
             var consideredGroups = groups
                 .Skip(1)
                 .Where(g => isPotentialAffixGroup(g));
+            consideredGroups = consideredGroups
+                .Skip(skipImplicitGroup(consideredGroups));
 
             if (consideredGroups.Any())
             {

@@ -1,0 +1,20 @@
+Rarity: Magic
+Titan's Blighted Ramparts Map of Power
+--------
+Map Tier: 2
+Item Quantity: +26% (augmented)
+Item Rarity: +16% (augmented)
+Monster Pack Size: +15% (augmented)
+--------
+Item Level: 74
+--------
+10% reduced Monster Movement Speed
+--------
+Area is infested with Fungal Growths (implicit)
+Natural inhabitants of this area have been removed (implicit)
+--------
+Unique Boss has 25% increased Life
+Unique Boss has 45% increased Area of Effect
+Monsters gain a Power Charge on Hit
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

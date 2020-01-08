@@ -128,5 +128,61 @@
             "isCorrupted": false,
             "isIdentified": true
         }
+    },
+    {
+        "file": "Maps/blighted_ramparts_t2_normal.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Blighted Ramparts Map",
+            "name": "Blighted Ramparts Map",
+            "mapTier": 2,
+            "isBlighted": true,
+            "isCorrupted": false,
+            "isIdentified": true,
+        }
+    },
+    {
+        "file": "Maps/blighted_ramparts_t2_superior.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Blighted Ramparts Map",
+            "name": "Superior Blighted Ramparts Map",
+            "mapTier": 2,
+            "isBlighted": true,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/blighted_ramparts_t2_normal_annointed.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Blighted Ramparts Map",
+            "name": "Blighted Ramparts Map",
+            "mapTier": 2,
+            "isBlighted": true,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/blighted_ramparts_t2_magic_annointed.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Normal",
+            "baseType": "Blighted Ramparts Map",
+            "name": "Titan's Blighted Ramparts Map of Power",
+            "mapTier": 2,
+            "isBlighted": true,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
     }
 ]

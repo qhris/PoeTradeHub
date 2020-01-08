@@ -1,0 +1,11 @@
+Rarity: Normal
+Blighted Ramparts Map
+--------
+Map Tier: 2
+--------
+Item Level: 74
+--------
+Area is infested with Fungal Growths (implicit)
+Natural inhabitants of this area have been removed (implicit)
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.
