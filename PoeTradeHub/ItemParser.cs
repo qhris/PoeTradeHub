@@ -45,7 +45,7 @@ namespace PoeTradeHub
 
                 lookupTable.Add(new MapAffixLookupEntry
                 {
-                    Pattern = modDescription,
+                    Pattern = $"^{modDescription}$",
                     StatId = statInfo.Id,
                 });
             }
@@ -131,7 +131,7 @@ namespace PoeTradeHub
             // Strip off magic suffix names: "Jungle Valley Map of Smothering" becomes "Jungle Valley Map"
             if (item.Rarity == ItemRarity.Magic && item.IsIdentified)
             {
-                item.BaseType = Regex.Replace(item.Name, @"\s+of\s+.*", "", RegexOptions.IgnoreCase);
+                item.BaseType = Regex.Replace(item.Name, @"\s+of\s+\w[\w\']+$", "", RegexOptions.IgnoreCase);
             }
 
             const string isMapPattern = @"^.*\s+Map$";

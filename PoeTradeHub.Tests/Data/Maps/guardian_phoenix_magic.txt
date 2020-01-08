@@ -1,0 +1,14 @@
+Rarity: Magic
+Forge of the Phoenix Map of Deadliness
+--------
+Map Tier: 16
+Item Quantity: +16% (augmented)
+Item Rarity: +9% (augmented)
+Monster Pack Size: +6% (augmented)
+--------
+Item Level: 83
+--------
+Monsters have 384% increased Critical Strike Chance
++41% to Monster Critical Strike Multiplier
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

@@ -212,5 +212,19 @@
             "isCorrupted": false,
             "isIdentified": false
         }
+    },
+    {
+        "file": "Maps/guardian_phoenix_magic.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Magic",
+            "baseType": "Forge of the Phoenix Map",
+            "name": "Forge of the Phoenix Map of Deadliness",
+            "mapTier": 16,
+            "isBlighted": false,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
     }
 ]
