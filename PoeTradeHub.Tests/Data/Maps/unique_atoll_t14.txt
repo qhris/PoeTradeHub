@@ -1,0 +1,23 @@
+Rarity: Unique
+Maelström of Chaos
+Atoll Map
+--------
+Map Tier: 14
+Item Quantity: +59% (augmented)
+Item Rarity: +240% (augmented)
+Quality: +6% (augmented)
+--------
+Item Level: 75
+--------
+Area has patches of chilled ground
+Monsters deal 50% extra Damage as Lightning
+Monsters are Immune to randomly chosen Elemental Ailments or Stun
+Monsters' Melee Attacks apply random Curses on Hit
+Monsters reflect Curses
+--------
+Whispers from a world apart
+Speak my name beyond the tomb;
+Bound within the Maelström's heart,
+Will they grant me strength or doom?
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.

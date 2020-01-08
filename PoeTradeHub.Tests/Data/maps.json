@@ -140,7 +140,7 @@
             "mapTier": 2,
             "isBlighted": true,
             "isCorrupted": false,
-            "isIdentified": true,
+            "isIdentified": true
         }
     },
     {
@@ -183,6 +183,34 @@
             "isBlighted": true,
             "isCorrupted": false,
             "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/unique_atoll_t14.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Unique",
+            "baseType": "Atoll Map",
+            "name": "Maelström of Chaos",
+            "mapTier": 14,
+            "isBlighted": false,
+            "isCorrupted": false,
+            "isIdentified": true
+        }
+    },
+    {
+        "file": "Maps/unique_overgrown_shrine_t13_unid.txt",
+        "test":
+        {
+            "itemType": "Map",
+            "rarity": "Unique",
+            "baseType": "Overgrown Shrine Map",
+            "name": "Overgrown Shrine Map",
+            "mapTier": 13,
+            "isBlighted": false,
+            "isCorrupted": false,
+            "isIdentified": false
         }
     }
 ]

@@ -139,12 +139,6 @@ namespace PoeTradeHub
             {
                 item.ItemType = ItemType.Map;
             }
-
-            // TODO: We need to know number of affixes of this magic item before we can strip the item name O(1).
-            //       Alternatively, we can match known item types using string.Contains but that is O(n+k).
-            //if (item.Rarity == ItemRarity.Magic && item.IsIdentified)
-            //{
-            //}
         }
 
         private void ParseMapAffixes(ItemInformation item, IList<string> itemData, IList<IList<string>> groups)
