@@ -6,6 +6,6 @@ namespace PoeTradeHub.TradeAPI
 {
     public interface ITradeAPI
     {
-        Task<IList<ItemRecord>> QueryPrice(ItemQuery query);
+        Task<IList<ItemRecord>> QueryPrice(ItemInformation item);
     }
 }

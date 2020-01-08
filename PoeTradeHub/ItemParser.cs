@@ -16,7 +16,7 @@ namespace PoeTradeHub
         class MapAffixLookupEntry
         {
             public string Pattern { get; set; }
-            public string StatId { get ; set; }
+            public string StatId { get; set; }
         }
 
         public ItemParser()
@@ -173,7 +173,8 @@ namespace PoeTradeHub
                         var values = match.Groups
                             .Cast<Group>()
                             .Skip(1)
-                            .Select(g => {
+                            .Select(g =>
+                            {
                                 if (int.TryParse(g.Value, out int value))
                                 {
                                     return value;
@@ -310,7 +311,7 @@ namespace PoeTradeHub
                         groups.Add(currentGroup);
                         currentGroup = new List<string>();
                     }
-                    
+
                     continue;
                 }
                 currentGroup.Add(line);

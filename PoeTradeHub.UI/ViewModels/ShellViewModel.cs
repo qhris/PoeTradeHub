@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -138,37 +137,20 @@ namespace PoeTradeHub.UI.ViewModels
 
         private async Task DisplayItemPrice(ItemInformation item)
         {
-            if (item.Rarity == ItemRarity.Unique)
+            try
             {
-                IList<ItemRecord> listings = await QueryUniqueItemListing(item.BaseType, item.Name);
-                var builder = new StringBuilder();
-
-                foreach (var listing in listings)
-                {
-                    if (listing.Listing.Price != null)
-                    {
-                        builder.AppendLine(
-                            $"Item: {listing.Item.Name}, " +
-                            $"Price: {listing.Listing.Price.Amount} {listing.Listing.Price.Currency}, " +
-                            $"Account: {listing.Listing.Account.Name}, " +
-                            $"Character: {listing.Listing.Account.LastCharacterName}, " +
-                            $"Stash: {listing.Listing.Stash?.Name} {{{listing.Listing?.Stash.X}, {listing.Listing?.Stash.Y}}}");
-                    }
-                }
-
+                IList<ItemRecord> listings = await QueryUniqueItemListing(item);
                 _windowManager.ShowWindow(new ItemListingViewModel(listings));
+            }
+            catch (NotImplementedException)
+            {
+                MessageBox.Show("Sorry, pricing for this type of item has not been implemented yet.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
-        private async Task<IList<ItemRecord>> QueryUniqueItemListing(string itemType, string itemName)
+        private async Task<IList<ItemRecord>> QueryUniqueItemListing(ItemInformation item)
         {
-            var query = new ItemQuery()
-            {
-                Name = itemName,
-                BaseType = itemType,
-            };
-
-            return await _tradeAPI.QueryPrice(query);
+            return await _tradeAPI.QueryPrice(item);
         }
 
         public void ShowConfiguration()

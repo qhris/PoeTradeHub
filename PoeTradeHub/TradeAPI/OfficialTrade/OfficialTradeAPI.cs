@@ -27,17 +27,17 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
         public Uri SearchUri =>
             new Uri($"{_TradeAPIEndpoint}/search/{_leagueName}");
 
-        public async Task<IList<ItemRecord>> QueryPrice(ItemQuery query)
+        public async Task<IList<ItemRecord>> QueryPrice(ItemInformation item)
         {
-            FetchResponse response = await SearchItem(query);
+            FetchResponse response = await SearchItem(item);
             return response.Result;
         }
 
-        private async Task<FetchResponse> SearchItem(ItemQuery itemQuery)
+        private async Task<FetchResponse> SearchItem(ItemInformation item)
         {
             using (var client = new HttpClient())
             {
-                ItemCollectionResponse collectionResponse = await QueryItemCollection(client, itemQuery);
+                ItemCollectionResponse collectionResponse = await QueryItemCollection(client, item);
 
                 if (!collectionResponse.Result.Any() || string.IsNullOrWhiteSpace(collectionResponse.Id))
                 {
@@ -48,9 +48,9 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
             }
         }
 
-        private async Task<ItemCollectionResponse> QueryItemCollection(HttpClient client, ItemQuery itemQuery)
+        private async Task<ItemCollectionResponse> QueryItemCollection(HttpClient client, ItemInformation item)
         {
-            string searchQuery = BuildSearchQuery(itemQuery);
+            string searchQuery = BuildSearchQuery(item);
             var requestContent = new StringContent(searchQuery.ToString(), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync(SearchUri, requestContent);
 
@@ -65,7 +65,22 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
             return JsonConvert.DeserializeObject<ItemCollectionResponse>(responseText);
         }
 
-        private string BuildSearchQuery(ItemQuery itemQuery)
+        private string BuildSearchQuery(ItemInformation item)
+        {
+            if (item.Rarity == ItemRarity.Unique)
+            {
+                return BuildUniqueItemQuery(item);
+            }
+
+            if (item.ItemType == ItemType.Map)
+            {
+                return BuildMapQuery(item);
+            }
+
+            throw new NotImplementedException("Item type can not be queried.");
+        }
+
+        private string BuildUniqueItemQuery(ItemInformation item)
         {
             JObject query = JObject.FromObject(new
             {
@@ -75,8 +90,7 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
                     {
                         option = "online",
                     },
-                    name = itemQuery.Name,
-                    type = itemQuery.BaseType,
+                    type = item.BaseType,
                 },
                 sort = new
                 {
@@ -84,7 +98,78 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
                 },
             });
 
-            return query.ToString();
+            if (item.IsIdentified)
+            {
+                query["query"]["name"] = item.Name;
+            }
+            else
+            {
+                query["query"]["filters"] = JObject.FromObject(new
+                {
+                    type_filters = new
+                    {
+                        filters = new
+                        {
+                            rarity = new
+                            {
+                                option = "unique",
+                            },
+                        },
+                    },
+                });
+                // query["query"]["filters"]
+            }
+
+            return query.ToString(Formatting.None);
+        }
+
+        private string BuildMapQuery(ItemInformation item)
+        {
+            JObject query = JObject.FromObject(new
+            {
+                query = new
+                {
+                    status = new
+                    {
+                        option = "online",
+                    },
+                    type = new
+                    {
+                        option = item.BaseType,
+                        discriminator = "warfortheatlas",
+                    },
+                    filters = new
+                    {
+                        map_filters = new
+                        {
+                            filters = new
+                            {
+                                map_tier = new
+                                {
+                                    min = item.MapTier,
+                                    max = item.MapTier,
+                                }
+                            }
+                        },
+                        misc_filters = new
+                        {
+                            filters = new
+                            {
+                                corrupted = new
+                                {
+                                    option = item.IsCorrupted.ToString().ToLower(),
+                                },
+                            },
+                        },
+                    },
+                },
+                sort = new
+                {
+                    price = "asc",
+                },
+            });
+
+            return query.ToString(Formatting.None);
         }
 
         private async Task<FetchResponse> FetchItems(HttpClient client, ItemCollectionResponse collectionResponse)
