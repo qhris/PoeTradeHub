@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -26,6 +27,9 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
 
         public Uri SearchUri =>
             new Uri($"{_TradeAPIEndpoint}/search/{_leagueName}");
+
+        public Uri ExchangeUri =>
+            new Uri($"{_TradeAPIEndpoint}/exchange/{_leagueName}");
 
         public async Task<IList<ItemRecord>> QueryPrice(ItemInformation item)
         {
@@ -50,9 +54,22 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
 
         private async Task<ItemCollectionResponse> QueryItemCollection(HttpClient client, ItemInformation item)
         {
-            string searchQuery = BuildSearchQuery(item);
+            string searchQuery;
+            Uri endpoint;
+
+            if (IsExchangeItem(item))
+            {
+                searchQuery = BuildExchangeQuery(item);
+                endpoint = ExchangeUri;
+            }
+            else
+            {
+                searchQuery = BuildSearchQuery(item);
+                endpoint = SearchUri;
+            }
+
             var requestContent = new StringContent(searchQuery.ToString(), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync(SearchUri, requestContent);
+            HttpResponseMessage response = await client.PostAsync(endpoint, requestContent);
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
@@ -63,6 +80,49 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
 
             string responseText = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ItemCollectionResponse>(responseText);
+        }
+
+        private bool IsExchangeItem(ItemInformation item)
+        {
+            switch (item.ItemType)
+            {
+                case ItemType.DivinationCard:
+                case ItemType.Currency:
+                    return true;
+
+                default:
+                    return false;
+            }
+        }
+
+        private string BuildExchangeQuery(ItemInformation item)
+        {
+            string sanitizedName = null;
+
+            if (item.ItemType == ItemType.DivinationCard)
+            {
+                var words = item.Name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var name = Regex.Replace(string.Join("-", words), @"[,.:\'\""]+", string.Empty);
+                sanitizedName = name.ToLowerInvariant();
+            }
+
+            if (sanitizedName == null)
+            {
+                throw new NotImplementedException("Item type can not be queried.");
+            }
+
+            return JObject.FromObject(new
+            {
+                exchange = new
+                {
+                    status = new
+                    {
+                        option = "online",
+                    },
+                    have = new string[] { },
+                    want = new string[] { sanitizedName },
+                },
+            }).ToString(Formatting.None);
         }
 
         private string BuildSearchQuery(ItemInformation item)

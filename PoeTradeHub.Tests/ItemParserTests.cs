@@ -18,5 +18,15 @@ namespace PoeTradeHub.Tests
             Assert.Equal(expected.BaseType, result.BaseType);
             Assert.Equal(expected.IsBlighted ?? false, result.IsBlighted ?? false);
         }
+
+        [Theory]
+        [ItemTestData("Data/cards.json")]
+        public void Parse_ParsesSuccessfully_GivenCards(string data, ItemInformation expected)
+        {
+            var parser = new ItemParser();
+            var result = parser.Parse(data);
+
+            Assert.Equal(ItemType.DivinationCard, result.ItemType);
+        }
     }
 }

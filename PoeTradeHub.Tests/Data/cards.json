@@ -1,0 +1,57 @@
+[
+    {
+        "file": "Cards/emperors_luck.txt",
+        "test":
+        {
+            "itemType": "DivinationCard",
+            "baseType": "Divination Card",
+            "name": "Emperor's Luck",
+            "stack": 5,
+            "stackSize": 5
+        }
+    },
+    {
+        "file": "Cards/rain_of_chaos.txt",
+        "test":
+        {
+            "itemType": "DivinationCard",
+            "baseType": "Divination Card",
+            "name": "Rain of Chaos",
+            "stack": 8,
+            "stackSize": 8
+        }
+    },
+    {
+        "file": "Cards/the_obscured.txt",
+        "test":
+        {
+            "itemType": "DivinationCard",
+            "baseType": "Divination Card",
+            "name": "The Obscured",
+            "stack": 1,
+            "stackSize": 7
+        }
+    },
+    {
+        "file": "Cards/the_cartographer.txt",
+        "test":
+        {
+            "itemType": "DivinationCard",
+            "baseType": "Divination Card",
+            "name": "The Cartographer",
+            "stack": 1,
+            "stackSize": 1
+        }
+    },
+    {
+        "file": "Cards/the_heroic_shot.txt",
+        "test":
+        {
+            "itemType": "DivinationCard",
+            "baseType": "Divination Card",
+            "name": "The Heroic Shot",
+            "stack": 1,
+            "stackSize": 1
+        }
+    }
+]

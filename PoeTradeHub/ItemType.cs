@@ -5,6 +5,7 @@
         Unknown,
         Equipment,
         Currency,
+        DivinationCard,
         Map,
         Gem,
     }

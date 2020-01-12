@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Caliburn.Micro;
 using PoeTradeHub.TradeAPI.Models;
 using PoeTradeHub.UI.Models;

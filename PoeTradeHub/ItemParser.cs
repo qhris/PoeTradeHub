@@ -116,11 +116,22 @@ namespace PoeTradeHub
                 item.IsBlighted = Regex.IsMatch(item.BaseType, @"^Blighted\s+.*$");
             }
 
+            if (item.ItemType == ItemType.DivinationCard)
+            {
+                // ParseDivinationCardStack(item, groups);
+            }
+
             return item;
         }
 
         private void ParseItemType(ItemInformation item, IList<string> itemData, IList<IList<string>> groups)
         {
+            if (Regex.IsMatch(item.BaseType, @"Divination\s*Card"))
+            {
+                item.ItemType = ItemType.DivinationCard;
+                return;
+            }
+
             // Strip off quality names: "Superior Thicket Bow" becomes "Thicket Bow"
             // These names appear on normal rarity items or unidentifed items with quality.
             if ((item.Rarity == ItemRarity.Normal || !item.IsIdentified) && (item.Quality ?? 0) > 0)
@@ -376,6 +387,36 @@ namespace PoeTradeHub
             }
 
             return item;
+        }
+
+        private void ParseDivinationCardStack(ItemInformation item, IList<IList<string>> groups)
+        {
+            if (item.ItemType != ItemType.DivinationCard)
+            {
+                throw new ArgumentException("Item must be a card type", nameof(item));
+            }
+
+            string stackInfo = groups
+                .Skip(1)
+                .Where(g => g.Count == 1)
+                .Select(g => g.First())
+                .Where(l => l.StartsWith("Stack Size:"))
+                .FirstOrDefault();
+
+            if (stackInfo != null)
+            {
+                var match = Regex.Match(stackInfo, @"Stack\s*Size\:\s+(\d+)\/(\d+)");
+                if (match.Success)
+                {
+                    item.Stack = int.Parse(match.Groups[1].Value);
+                    item.StackSize = int.Parse(match.Groups[2].Value);
+
+                    return;
+                }
+            }
+
+            item.Stack = 1;
+            item.StackSize = 1;
         }
 
         private int? GetQuality(IList<string> itemData)

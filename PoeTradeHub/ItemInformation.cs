@@ -15,6 +15,8 @@ namespace PoeTradeHub
         public bool IsIdentified { get; set; }
         public int? ItemLevel { get; set; }
         public int? MapTier { get; set; }
+        public int? Stack { get; set; }
+        public int? StackSize { get; set; }
         public bool IsCorrupted { get; set; }
         public string FlavorText { get; set; }
         public IList<string> RawAffixes { get; set; }
