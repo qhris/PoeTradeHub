@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace PoeTradeHub.UI.Utils
+namespace PoeTradeHub.UI.Utility
 {
     public static class Native
     {

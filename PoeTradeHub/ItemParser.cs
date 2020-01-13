@@ -483,7 +483,7 @@ namespace PoeTradeHub
             return null;
         }
 
-        public string DebugItem(ItemInformation item)
+        public static string DebugItem(ItemInformation item)
         {
             return JsonConvert.SerializeObject(item, Formatting.Indented);
         }

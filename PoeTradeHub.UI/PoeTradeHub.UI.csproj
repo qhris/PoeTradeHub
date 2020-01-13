@@ -94,9 +94,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AutofacBootstrapper.cs" />
+    <Compile Include="Models\ApplicationHotkeySettings.cs" />
+    <Compile Include="Models\HotkeyBinding.cs" />
     <Compile Include="Models\ItemListingModel.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Utils\Native.cs" />
+    <Compile Include="Services\ApplicationSettingsService.cs" />
+    <Compile Include="Services\HotkeyService.cs" />
+    <Compile Include="Services\IApplicationSettingsService.cs" />
+    <Compile Include="Services\IHotkeyService.cs" />
+    <Compile Include="Services\ItemEventArgs.cs" />
+    <Compile Include="Utility\Native.cs" />
     <Compile Include="ViewModels\ConfigurationViewModel.cs" />
     <Compile Include="ViewModels\ItemDebugViewModel.cs" />
     <Compile Include="ViewModels\ItemListingViewModel.cs" />
