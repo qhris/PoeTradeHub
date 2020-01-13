@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Windows;
 using Autofac;
+using AutofacSerilogIntegration;
 using PoeTradeHub.TradeAPI;
 using PoeTradeHub.TradeAPI.OfficialTrade;
 using PoeTradeHub.UI.ViewModels;
@@ -18,6 +19,8 @@ namespace PoeTradeHub.UI
         protected override void ConfigureContainer(ContainerBuilder builder)
         {
             base.ConfigureContainer(builder);
+
+            builder.RegisterLogger();
 
             // Register services.
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())

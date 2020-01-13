@@ -10,26 +10,29 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PoeTradeHub.TradeAPI.Models;
 using PoeTradeHub.TradeAPI.OfficialTrade.Models;
+using Serilog;
 
 namespace PoeTradeHub.TradeAPI.OfficialTrade
 {
     public class OfficialTradeAPI : ITradeAPI
     {
+        private const string TradeApiEndpoint = "https://www.pathofexile.com/api/trade";
+
+        private readonly ILogger _logger;
         private string _leagueName;
 
-        private const string _TradeAPIEndpoint = "https://www.pathofexile.com/api/trade";
-
-        public OfficialTradeAPI(string leagueName)
+        public OfficialTradeAPI(ILogger logger, string leagueName)
         {
+            _logger = logger;
             // TODO: Aquire league name from a provider, it'll need to be pulled from the trade site or the API.
             _leagueName = leagueName;
         }
 
         public Uri SearchUri =>
-            new Uri($"{_TradeAPIEndpoint}/search/{_leagueName}");
+            new Uri($"{TradeApiEndpoint}/search/{_leagueName}");
 
         public Uri ExchangeUri =>
-            new Uri($"{_TradeAPIEndpoint}/exchange/{_leagueName}");
+            new Uri($"{TradeApiEndpoint}/exchange/{_leagueName}");
 
         public async Task<IList<ItemRecord>> QueryPrice(ItemInformation item)
         {
@@ -73,7 +76,7 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
-                // TODO: Log error here...
+                _logger.Error("Error making request {@Request}, got {@Response", searchQuery, response);
                 // TODO: Use exception or null return?
                 throw new NotImplementedException();
             }
@@ -249,7 +252,7 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
 
             // The maximum amount of items for each fetch is 10.
             var urlData = string.Join(",", itemIdentifiers.Skip(skip).Take(10));
-            return new Uri($"{_TradeAPIEndpoint}/fetch/{urlData}?query={queryId}");
+            return new Uri($"{TradeApiEndpoint}/fetch/{urlData}?query={queryId}");
         }
     }
 }

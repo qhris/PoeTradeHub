@@ -5,6 +5,7 @@ using NHotkey;
 using NHotkey.Wpf;
 using PoeTradeHub.UI.Models;
 using PoeTradeHub.UI.Utility;
+using Serilog;
 using WindowsInput;
 using WindowsInput.Native;
 
@@ -16,15 +17,20 @@ namespace PoeTradeHub.UI.Services
         private const string ItemDebugHotkeyId = "PoeTradeHub:ItemDebug";
         private const string ItemPriceHotkeyId = "PoeTradeHub:ItemPrice";
 
+        private readonly ILogger _logger;
         private readonly IApplicationSettingsService _settingsService;
         private readonly IInputSimulator _inputSimulator;
 
         public HotkeyService(
+            ILogger logger,
             IApplicationSettingsService settingsService,
             IInputSimulator inputSimulator)
         {
+            _logger = logger;
             _settingsService = settingsService;
             _inputSimulator = inputSimulator;
+
+            _logger.Information("Initialized hotkey service");
         }
         
         public event EventHandler<ItemEventArgs> DebugItem;
@@ -86,9 +92,9 @@ namespace PoeTradeHub.UI.Services
                     }
                 }
 
-                catch (InvalidItemException)
+                catch (InvalidItemException e)
                 {
-                    // TODO: Log failed parses.
+                    _logger.Error(e, "Failed to parse item");
                 }
 
                 Enable();

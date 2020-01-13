@@ -10,21 +10,19 @@ namespace PoeTradeHub.UI
 {
     public class AutofacBootstrapper : BootstrapperBase
     {
-        private IContainer _container;
-
-        /// <summary>
-        /// Get the IoC container.
-        /// </summary>
-        public IContainer Container => _container;
-
         protected override void Configure()
         {
             var builder = new ContainerBuilder();
 
             ConfigureContainer(builder);
 
-            _container = builder.Build();
+            Container = builder.Build();
         }
+
+        /// <summary>
+        /// Get the IoC container.
+        /// </summary>
+        public IContainer Container { get; private set; }
 
         protected override object GetInstance(Type serviceType, string key)
         {

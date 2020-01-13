@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.Windows;
+using Serilog;
+using Serilog.Core;
 
 namespace PoeTradeHub.UI
 {
@@ -19,10 +21,23 @@ namespace PoeTradeHub.UI
                     return;
                 }
 
+                ILogger logger = ConfigureRootLogger();
+                logger.Information("Starting application");
+
                 var app = new App();
                 app.InitializeComponent();
                 app.Run();
             }
+        }
+
+        private static ILogger ConfigureRootLogger()
+        {
+            Logger logger = new LoggerConfiguration()
+                .ReadFrom.AppSettings()
+                .CreateLogger();
+
+            Log.Logger = logger;
+            return logger;
         }
     }
 }
