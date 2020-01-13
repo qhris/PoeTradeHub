@@ -118,7 +118,7 @@ namespace PoeTradeHub
 
             if (item.ItemType == ItemType.DivinationCard)
             {
-                // ParseDivinationCardStack(item, groups);
+                ParseDivinationCardStack(item, groups);
             }
 
             return item;

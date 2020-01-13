@@ -27,6 +27,10 @@ namespace PoeTradeHub.Tests
             var result = parser.Parse(data);
 
             Assert.Equal(ItemType.DivinationCard, result.ItemType);
+            Assert.Equal(expected.BaseType, result.BaseType);
+            Assert.Equal(expected.Name, result.Name);
+            Assert.Equal(expected.Stack, result.Stack);
+            Assert.Equal(expected.StackSize, result.StackSize);
         }
     }
 }
