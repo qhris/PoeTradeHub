@@ -32,6 +32,7 @@ namespace PoeTradeHub.UI.ViewModels
                 {
                     Account = listing.Listing.Account,
                     Item = listing.Item,
+                    Date = listing.Listing.Indexed,
                     CurrencyType = price?.Currency,
                     HasPriceTag = price != null,
                     PriceTag = priceTag,

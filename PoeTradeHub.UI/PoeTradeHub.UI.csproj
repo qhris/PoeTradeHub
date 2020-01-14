@@ -116,6 +116,7 @@
     <Compile Include="Services\ItemEventArgs.cs" />
     <Compile Include="Utility\Native.cs" />
     <Compile Include="Models\LeagueInfoModel.cs" />
+    <Compile Include="ValueConverters\TimeSinceDateConverter.cs" />
     <Compile Include="ViewModels\ConfigurationViewModel.cs" />
     <Compile Include="ViewModels\ItemDebugViewModel.cs" />
     <Compile Include="ViewModels\ItemListingViewModel.cs" />
