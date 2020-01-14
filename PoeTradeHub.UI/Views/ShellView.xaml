@@ -10,10 +10,33 @@
         Background="Transparent"
         Visibility="Hidden">
     <Window.Resources>
-        <ContextMenu x:Shared="false" x:Key="MainSysTrayMenu">
+        <ContextMenu x:Shared="false"
+                     x:Key="MainSysTrayMenu"
+                     >
             <MenuItem Header="Configure..."
                       FontWeight="Bold"
                       cal:Message.Attach="ShowConfiguration"/>
+            <Separator/>
+            <MenuItem x:Name="Leagues"
+                      Header="Select League"
+                      Tag="{Binding}"
+                      ItemsSource="{Binding Leagues}">
+                <MenuItem.ItemTemplate>
+                    <DataTemplate>
+                        <MenuItem
+                            cal:Action.TargetWithoutContext="{
+                                Binding Path=Tag,
+                                RelativeSource={RelativeSource
+                                    Mode=FindAncestor,
+                                    AncestorType=MenuItem,
+                                    AncestorLevel=2}}"
+                            cal:Message.Attach="[Event Click] = [Action SelectLeague($dataContext)]"
+                            Header="{Binding Text}"
+                            IsCheckable="True"
+                            IsChecked="{Binding IsSelected}"/>
+                    </DataTemplate>
+                </MenuItem.ItemTemplate>
+            </MenuItem>
             <Separator/>
             <MenuItem Header="Exit" cal:Message.Attach="ExitApplication"/>
         </ContextMenu>

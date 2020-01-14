@@ -104,6 +104,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AutofacBootstrapper.cs" />
+    <Compile Include="ValueConverters\DebugConverter.cs" />
     <Compile Include="Models\ApplicationHotkeySettings.cs" />
     <Compile Include="Models\HotkeyBinding.cs" />
     <Compile Include="Models\ItemListingModel.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Services\IHotkeyService.cs" />
     <Compile Include="Services\ItemEventArgs.cs" />
     <Compile Include="Utility\Native.cs" />
+    <Compile Include="Models\LeagueInfoModel.cs" />
     <Compile Include="ViewModels\ConfigurationViewModel.cs" />
     <Compile Include="ViewModels\ItemDebugViewModel.cs" />
     <Compile Include="ViewModels\ItemListingViewModel.cs" />

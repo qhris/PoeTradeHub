@@ -19,32 +19,47 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
         private const string TradeApiEndpoint = "https://www.pathofexile.com/api/trade";
 
         private readonly ILogger _logger;
-        private string _leagueName;
 
-        public OfficialTradeAPI(ILogger logger, string leagueName)
+        public OfficialTradeAPI(ILogger logger)
         {
             _logger = logger;
-            // TODO: Aquire league name from a provider, it'll need to be pulled from the trade site or the API.
-            _leagueName = leagueName;
         }
 
-        public Uri SearchUri =>
-            new Uri($"{TradeApiEndpoint}/search/{_leagueName}");
-
-        public Uri ExchangeUri =>
-            new Uri($"{TradeApiEndpoint}/exchange/{_leagueName}");
-
-        public async Task<IList<ItemRecord>> QueryPrice(ItemInformation item)
-        {
-            FetchResponse response = await SearchItem(item);
-            return response.Result;
-        }
-
-        private async Task<FetchResponse> SearchItem(ItemInformation item)
+        public async Task<IList<LeagueInfo>> QueryLeagues()
         {
             using (var client = new HttpClient())
             {
-                ItemCollectionResponse collectionResponse = await QueryItemCollection(client, item);
+                var uri = new Uri($"{TradeApiEndpoint}/data/leagues");
+                _logger.Information($"GET {uri}");
+                HttpResponseMessage response = await client.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    try
+                    {
+                        string payload = await response.Content.ReadAsStringAsync();
+                        var data = JObject.Parse(payload);
+
+                        return data["result"].ToObject<IList<LeagueInfo>>();
+                    }
+                    catch (JsonReaderException) { }
+                }
+            }
+
+            return new List<LeagueInfo>();
+        }
+
+        public async Task<IList<ItemRecord>> QueryPrice(string leagueName, ItemInformation item)
+        {
+            FetchResponse response = await SearchItem(leagueName, item);
+            return response.Result;
+        }
+
+        private async Task<FetchResponse> SearchItem(string leagueName, ItemInformation item)
+        {
+            using (var client = new HttpClient())
+            {
+                ItemCollectionResponse collectionResponse = await QueryItemCollection(client, leagueName, item);
 
                 if (!collectionResponse.Result.Any() || string.IsNullOrWhiteSpace(collectionResponse.Id))
                 {
@@ -55,7 +70,7 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
             }
         }
 
-        private async Task<ItemCollectionResponse> QueryItemCollection(HttpClient client, ItemInformation item)
+        private async Task<ItemCollectionResponse> QueryItemCollection(HttpClient client, string leagueName, ItemInformation item)
         {
             string searchQuery;
             Uri endpoint;
@@ -63,12 +78,12 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
             if (IsExchangeItem(item))
             {
                 searchQuery = BuildExchangeQuery(item);
-                endpoint = ExchangeUri;
+                endpoint = new Uri($"{TradeApiEndpoint}/exchange/{leagueName}");
             }
             else
             {
                 searchQuery = BuildSearchQuery(item);
-                endpoint = SearchUri;
+                endpoint = new Uri($"{TradeApiEndpoint}/search/{leagueName}");
             }
 
             var requestContent = new StringContent(searchQuery.ToString(), Encoding.UTF8, "application/json");
@@ -77,6 +92,7 @@ namespace PoeTradeHub.TradeAPI.OfficialTrade
             if (response.StatusCode != HttpStatusCode.OK)
             {
                 _logger.Error("Error making request {@Request}, got {@Response", searchQuery, response);
+
                 // TODO: Use exception or null return?
                 throw new NotImplementedException();
             }
