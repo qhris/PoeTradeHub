@@ -1,0 +1,9 @@
+Rarity: Normal
+Gilded Divination Scarab
+--------
+150% more Divination Cards found in Area
+--------
+Your centuries of service have been invaluable to us, Narumoa. Go now,
+return to Hinekora, and join your ancient kin in the halls of the dead.
+--------
+Can be used in a personal Map Device to add modifiers to a Map.

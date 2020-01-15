@@ -132,6 +132,31 @@ namespace PoeTradeHub
                 return;
             }
 
+            if (item.Rarity == ItemRarity.Normal && !item.IsCorrupted && item.Quality.GetValueOrDefault(0) == 0)
+            {
+                var fragmentPatterns = new string[]
+                {
+                    @"^(?:chayula|esh|tul|uul-netol|xoph)'s(?: (charged|enriched|pure))? breachstone$",
+                    @"^timeless (?:eternal|karui|maraketh|templar|vaal) emblem$",
+                    @"^sacrifice at (?:dawn|dusk|midnight|noon)$",
+                    @"^mortal (?:grief|hope|ignorance|rage)$",
+                    @"^fragment of(?: the)? \w+$",
+                    @"^(?:eber|inya|volkuur|yriel)'s key$",
+                    @"^divine vessel$",
+                    @"^offering to the goddess$",
+                    @"^(?:rusted|polished|gilded) [\w']+ scarab$",
+                };
+
+                foreach (var pattern in fragmentPatterns)
+                {
+                    if (Regex.IsMatch(item.BaseType, pattern, RegexOptions.IgnoreCase))
+                    {
+                        item.ItemType = ItemType.MapFragment;
+                        return;
+                    }
+                }
+            }
+
             // Strip off quality names: "Superior Thicket Bow" becomes "Thicket Bow"
             // These names appear on normal rarity items or unidentifed items with quality.
             if ((item.Rarity == ItemRarity.Normal || !item.IsIdentified) && (item.Quality ?? 0) > 0)

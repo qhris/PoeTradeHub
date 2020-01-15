@@ -7,6 +7,7 @@
         Currency,
         DivinationCard,
         Map,
+        MapFragment,
         Gem,
     }
 }

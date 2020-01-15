@@ -1,0 +1,10 @@
+Rarity: Normal
+Rusted Bestiary Scarab
+--------
+Area contains Einhar
+Area contains an additional Red Beast
+--------
+Feuding Ezomytes slaughtered your kin, young Agnar, but we pulled you
+from the flames. The Order of the Djinn is your clan now.
+--------
+Can be used in a personal Map Device to add modifiers to a Map.

@@ -1,0 +1,250 @@
+[
+    {
+        "file": "Fragments/breachstone_chayula_pure.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Chayula's Pure Breachstone"
+        }
+    },
+    {
+        "file": "Fragments/breachstone_esh_enriched.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Esh's Enriched Breachstone"
+        }
+    },
+    {
+        "file": "Fragments/breachstone_tul_charged.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Tul's Charged Breachstone"
+        }
+    },
+    {
+        "file": "Fragments/breachstone_uul_pure.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Uul-Netol's Pure Breachstone"
+        }
+    },
+    {
+        "file": "Fragments/breachstone_xoph_normal.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Xoph's Breachstone"
+        }
+    },
+    {
+        "file": "Fragments/emblem_eternal.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Timeless Eternal Emblem"
+        }
+    },
+    {
+        "file": "Fragments/emblem_karui.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Timeless Karui Emblem"
+        }
+    },
+    {
+        "file": "Fragments/emblem_maraketh.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Timeless Maraketh Emblem"
+        }
+    },
+    {
+        "file": "Fragments/emblem_templar.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Timeless Templar Emblem"
+        }
+    },
+    {
+        "file": "Fragments/emblem_vaal.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Timeless Vaal Emblem"
+        }
+    },
+    {
+        "file": "Fragments/mortal_grief.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Mortal Grief"
+        }
+    },
+    {
+        "file": "Fragments/mortal_hope.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Mortal Hope"
+        }
+    },
+    {
+        "file": "Fragments/mortal_ignorance.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Mortal Ignorance"
+        }
+    },
+    {
+        "file": "Fragments/mortal_rage.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Mortal Rage"
+        }
+    },
+    {
+        "file": "Fragments/sacrifice_at_dawn.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Sacrifice at Dawn"
+        }
+    },
+    {
+        "file": "Fragments/sacrifice_at_dusk.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Sacrifice at Dusk"
+        }
+    },
+    {
+        "file": "Fragments/sacrifice_at_midnight.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Sacrifice at Midnight"
+        }
+    },
+    {
+        "file": "Fragments/sacrifice_at_noon.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Sacrifice at Noon"
+        }
+    },
+    {
+        "file": "Fragments/fragment_of_enslavement.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Fragment of Enslavement"
+        }
+    },
+    {
+        "file": "Fragments/fragment_of_the_phoenix.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Fragment of the Phoenix"
+        }
+    },
+    {
+        "file": "Fragments/prophecy_eber.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Eber's Key"
+        }
+    },
+    {
+        "file": "Fragments/prophecy_inya.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Inya's Key"
+        }
+    },
+    {
+        "file": "Fragments/prophecy_volkuur.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Volkuur's Key"
+        }
+    },
+    {
+        "file": "Fragments/prophecy_yriel.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Yriel's Key"
+        }
+    },
+    {
+        "file": "Fragments/divine_vessel.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Divine Vessel"
+        }
+    },
+    {
+        "file": "Fragments/offering_to_the_goddess.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Offering to the Goddess"
+        }
+    },
+    {
+        "file": "Fragments/scarab_ambush_rusted.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Rusted Ambush Scarab"
+        }
+    },
+    {
+        "file": "Fragments/scarab_bestiary_rusted.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Rusted Bestiary Scarab"
+        }
+    },
+    {
+        "file": "Fragments/scarab_breach_rusted.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Rusted Breach Scarab"
+        }
+    },
+    {
+        "file": "Fragments/scarab_cartography_polished.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Polished Cartography Scarab"
+        }
+    },
+    {
+        "file": "Fragments/scarab_divination_gilded.txt",
+        "test":
+        {
+            "itemType": "MapFragment",
+            "name": "Gilded Divination Scarab"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+Rarity: Normal
+Rusted Breach Scarab
+--------
+Area contains an additional Breach
+--------
+The Ember-dwellers sought to throw you to their volcanic god, young Omid,
+but we caught you instead. The Order of the Djinn is your tribe now.
+--------
+Can be used in a personal Map Device to add modifiers to a Map.

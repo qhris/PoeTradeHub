@@ -1,0 +1,9 @@
+Rarity: Normal
+Polished Cartography Scarab
+--------
+35% more Maps found in Area
+--------
+For your loyalty and valour, honoured Betucia, we are proud to put
+the requisition of dream-artefacts in your capable hands.
+--------
+Can be used in a personal Map Device to add modifiers to a Map.

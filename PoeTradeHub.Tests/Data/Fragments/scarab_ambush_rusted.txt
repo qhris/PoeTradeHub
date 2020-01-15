@@ -1,0 +1,9 @@
+Rarity: Normal
+Rusted Ambush Scarab
+--------
+Area contains 3 additional Strongboxes
+--------
+Your outlaw camp abandoned you when their surprise attack failed, young Rindwik.
+Now that you know we exist, we cannot let you go. You have two choices.
+--------
+Can be used in a personal Map Device to add modifiers to a Map.

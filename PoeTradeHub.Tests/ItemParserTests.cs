@@ -32,5 +32,19 @@ namespace PoeTradeHub.Tests
             Assert.Equal(expected.Stack, result.Stack);
             Assert.Equal(expected.StackSize, result.StackSize);
         }
+
+        [Theory]
+        [ItemTestData("Data/fragments.json")]
+        public void Parse_ParsesSuccessfully_GivenFragments(string data, ItemInformation expected)
+        {
+            var parser = new ItemParser();
+            var result = parser.Parse(data);
+
+            Assert.Equal(expected.ItemType, result.ItemType);
+            Assert.Equal(expected.Name, result.Name);
+
+            // Name and basetypes should match.
+            Assert.Equal(result.Name, result.BaseType);
+        }
     }
 }
