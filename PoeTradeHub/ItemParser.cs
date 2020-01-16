@@ -116,9 +116,9 @@ namespace PoeTradeHub
                 item.IsBlighted = Regex.IsMatch(item.BaseType, @"^Blighted\s+.*$");
             }
 
-            if (item.ItemType == ItemType.DivinationCard)
+            if (item.ItemType == ItemType.DivinationCard || item.ItemType == ItemType.Currency)
             {
-                ParseDivinationCardStack(item, groups);
+                ParseItemStackSize(item, itemData);
             }
 
             return item;
@@ -129,6 +129,12 @@ namespace PoeTradeHub
             if (Regex.IsMatch(item.BaseType, @"Divination\s*Card"))
             {
                 item.ItemType = ItemType.DivinationCard;
+                return;
+            }
+
+            if (item.BaseType == "Currency")
+            {
+                item.ItemType = ItemType.Currency;
                 return;
             }
 
@@ -414,34 +420,28 @@ namespace PoeTradeHub
             return item;
         }
 
-        private void ParseDivinationCardStack(ItemInformation item, IList<IList<string>> groups)
+        private void ParseItemStackSize(ItemInformation item, IEnumerable<string> itemData)
         {
-            if (item.ItemType != ItemType.DivinationCard)
+            Match stackMatch = itemData
+                    .Where(x => x.StartsWith("Stack Size"))
+                    .Select(x => Regex.Match(x, @"^Stack Size:\s+(\d[\d., ]*)/(\d[\d., ]*)"))
+                    .Where(x => x.Success)
+                    .FirstOrDefault();
+
+            if (stackMatch != null)
             {
-                throw new ArgumentException("Item must be a card type", nameof(item));
+                var replacePattern = @"[.,]";
+                var stack = Regex.Replace(stackMatch.Groups[1].Value, replacePattern, string.Empty);
+                var stackSize = Regex.Replace(stackMatch.Groups[2].Value, replacePattern, string.Empty);
+
+                item.Stack = int.Parse(stack);
+                item.StackSize = int.Parse(stackSize);
             }
-
-            string stackInfo = groups
-                .Skip(1)
-                .Where(g => g.Count == 1)
-                .Select(g => g.First())
-                .Where(l => l.StartsWith("Stack Size:"))
-                .FirstOrDefault();
-
-            if (stackInfo != null)
+            else
             {
-                var match = Regex.Match(stackInfo, @"Stack\s*Size\:\s+(\d+)\/(\d+)");
-                if (match.Success)
-                {
-                    item.Stack = int.Parse(match.Groups[1].Value);
-                    item.StackSize = int.Parse(match.Groups[2].Value);
-
-                    return;
-                }
+                item.Stack = 1;
+                item.StackSize = 1;
             }
-
-            item.Stack = 1;
-            item.StackSize = 1;
         }
 
         private int? GetQuality(IList<string> itemData)

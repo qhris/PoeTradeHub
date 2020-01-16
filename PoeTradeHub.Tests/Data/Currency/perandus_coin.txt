@@ -1,0 +1,7 @@
+Rarity: Currency
+Perandus Coin
+--------
+Stack Size: 3,463/1,000
+--------
+Trade coins to Cadiro Perandus.
+Shift click to unstack.

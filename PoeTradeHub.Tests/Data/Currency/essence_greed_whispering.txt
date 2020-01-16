@@ -1,0 +1,16 @@
+Rarity: Currency
+Whispering Essence of Greed
+--------
+Stack Size: 12/9
+--------
+Upgrades a normal item to rare with one guaranteed property
+Properties restricted to level 35 and below
+
+Weapon: (0.5-0.7)% of Physical Attack Damage Leeched as Life
+Armour: (5-14) to maximum Life
+Quiver: (0.5-0.7)% of Physical Attack Damage Leeched as Life
+Belt: (8-11)% increased Flask Life Recovery rate
+Other Jewellery: Regenerate (1-2) Life per second
+--------
+Right click this item then left click a normal item to apply it.
+Shift click to unstack.

@@ -1,0 +1,32 @@
+[
+    {
+        "file": "Currency/essence_greed_whispering.txt",
+        "test":
+        {
+            "itemType": "Currency",
+            "name": "Whispering Essence of Greed",
+            "stack": 12,
+            "stackSize": 9
+        }
+    },
+    {
+        "file": "Currency/perandus_coin.txt",
+        "test":
+        {
+            "itemType": "Currency",
+            "name": "Perandus Coin",
+            "stack": 3463,
+            "stackSize": 1000
+        }
+    },
+    {
+        "file": "Currency/chaos_orb.txt",
+        "test":
+        {
+            "itemType": "Currency",
+            "name": "Chaos Orb",
+            "stack": 2430,
+            "stackSize": 10
+        }
+    }
+]

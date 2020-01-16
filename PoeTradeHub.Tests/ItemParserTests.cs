@@ -46,5 +46,18 @@ namespace PoeTradeHub.Tests
             // Name and basetypes should match.
             Assert.Equal(result.Name, result.BaseType);
         }
+
+        [Theory]
+        [ItemTestData("Data/currency.json")]
+        public void Parse_ParsesSuccessfully_GivenCurrency(string data, ItemInformation expected)
+        {
+            var parser = new ItemParser();
+            var result = parser.Parse(data);
+
+            Assert.Equal(expected.ItemType, result.ItemType);
+            Assert.Equal(expected.Name, result.Name);
+            Assert.Equal(expected.Stack, result.Stack);
+            Assert.Equal(expected.StackSize, result.StackSize);
+        }
     }
 }
