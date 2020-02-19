@@ -11,6 +11,7 @@ namespace PoeTradeHub.UI.Services
             {
                 DebugItem = new HotkeyBinding(Key.D, ModifierKeys.Shift | ModifierKeys.Control),
                 PriceItem = new HotkeyBinding(Key.D, ModifierKeys.Control),
+                ItemInfo = new HotkeyBinding(Key.C, ModifierKeys.Control),
             };
         }
 

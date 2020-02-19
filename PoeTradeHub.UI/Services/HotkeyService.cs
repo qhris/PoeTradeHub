@@ -16,6 +16,7 @@ namespace PoeTradeHub.UI.Services
         private const string GameWindowTitle = "Path of Exile";
         private const string ItemDebugHotkeyId = "PoeTradeHub:ItemDebug";
         private const string ItemPriceHotkeyId = "PoeTradeHub:ItemPrice";
+        private const string ItemInfoHotkeyId = "PoeTradeHud:ItemInfo";
 
         private readonly ILogger _logger;
         private readonly IApplicationSettingsService _settingsService;
@@ -32,16 +33,21 @@ namespace PoeTradeHub.UI.Services
 
             _logger.Information("Initialized hotkey service");
         }
-        
+
         public event EventHandler<ItemEventArgs> DebugItem;
 
         public event EventHandler<ItemEventArgs> PriceItem;
+
+        public event EventHandler<ItemEventArgs> ItemInfo;
 
         private void OnDebugItem(ItemInformation item) =>
             DebugItem?.Invoke(this, new ItemEventArgs(item));
 
         private void OnPriceItem(ItemInformation item) =>
             PriceItem?.Invoke(this, new ItemEventArgs(item));
+
+        private void OnItemInfo(ItemInformation item) =>
+            ItemInfo?.Invoke(this, new ItemEventArgs(item));
 
         public void Enable()
         {
@@ -51,12 +57,16 @@ namespace PoeTradeHub.UI.Services
             TryEnableHotkey(ItemDebugHotkeyId,
                 _settingsService.HotkeySettings.PriceItem,
                 ItemAction(OnPriceItem));
+            TryEnableHotkey(ItemInfoHotkeyId,
+                _settingsService.HotkeySettings.ItemInfo,
+                ItemAction(OnItemInfo));
         }
 
         public void Disable()
         {
             HotkeyManager.Current.Remove(ItemDebugHotkeyId);
             HotkeyManager.Current.Remove(ItemPriceHotkeyId);
+            HotkeyManager.Current.Remove(ItemInfoHotkeyId);
         }
 
         private EventHandler<HotkeyEventArgs> ItemAction(Action<ItemInformation> itemAction)
@@ -77,24 +87,37 @@ namespace PoeTradeHub.UI.Services
                     return;
                 }
 
+                // Clear the clipboard so we can determine if the game provided any info.
+                var clipboardRestore = Clipboard.GetText();
+                Clipboard.Clear();
+
                 _inputSimulator.Keyboard.ModifiedKeyStroke(
                     VirtualKeyCode.CONTROL,
                     VirtualKeyCode.VK_C);
                 await Task.Delay(50);
 
-                try
+                var clipboardText = Clipboard.GetText();
+                if (string.IsNullOrWhiteSpace(clipboardText))
                 {
-                    var parser = new ItemParser();
-                    var item = parser.Parse(Clipboard.GetText());
-                    if (item != null)
-                    {
-                        itemAction?.Invoke(item);
-                    }
+                    // Restore the clipboard if nothing was captured.
+                    Clipboard.SetText(clipboardRestore);
                 }
-
-                catch (InvalidItemException e)
+                else
                 {
-                    _logger.Error(e, "Failed to parse item");
+                    try
+                    {
+                        var parser = new ItemParser();
+                        var item = parser.Parse(clipboardText);
+                        if (item != null)
+                        {
+                            itemAction?.Invoke(item);
+                        }
+                    }
+
+                    catch (InvalidItemException e)
+                    {
+                        _logger.Error(e, "Failed to parse item");
+                    }
                 }
 
                 Enable();

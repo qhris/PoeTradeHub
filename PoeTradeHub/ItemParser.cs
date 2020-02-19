@@ -507,10 +507,5 @@ namespace PoeTradeHub
 
             return null;
         }
-
-        public static string DebugItem(ItemInformation item)
-        {
-            return JsonConvert.SerializeObject(item, Formatting.Indented);
-        }
     }
 }

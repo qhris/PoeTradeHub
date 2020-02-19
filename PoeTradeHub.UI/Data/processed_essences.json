@@ -1,0 +1,3817 @@
+{
+  "Whispering Essence of Hatred": {
+    "itemLevelRestriction": 35,
+    "dropLevelMin": 1,
+    "dropLevelMax": 47,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 1
+      }
+    ]
+  },
+  "Muttering Essence of Hatred": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 12
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 12
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 14
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 14
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 14
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 10
+      }
+    ]
+  },
+  "Weeping Essence of Hatred": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 27
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 27
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 26
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 26
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 26
+      }
+    ]
+  },
+  "Wailing Essence of Hatred": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 43
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 43
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 38
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 38
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 38
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Hatred": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 60
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 60
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 60
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Hatred": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 75
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 75
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 72
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 72
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 72
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Hatred": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 84
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 84
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 84
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Whispering Essence of Woe": {
+    "itemLevelRestriction": 35,
+    "dropLevelMin": 1,
+    "dropLevelMax": 47,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 3
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 3
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 3
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 3
+      }
+    ]
+  },
+  "Muttering Essence of Woe": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 11
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 10
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 18
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 11
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 11
+      }
+    ]
+  },
+  "Weeping Essence of Woe": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 23
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 23
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 23
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 26
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 30
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 29
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 29
+      }
+    ]
+  },
+  "Wailing Essence of Woe": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 35
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 35
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 42
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 43
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 35
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 10
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Woe": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 51
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 10
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 50
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 50
+      }
+    ]
+  },
+  "Shrieking Essence of Woe": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 10
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 68
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 59
+      }
+    ]
+  },
+  "Deafening Essence of Woe": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 10
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 68
+      }
+    ]
+  },
+  "Whispering Essence of Greed": {
+    "itemLevelRestriction": 35,
+    "dropLevelMin": 1,
+    "dropLevelMax": 47,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 1
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 3
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 1
+      }
+    ]
+  },
+  "Muttering Essence of Greed": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 10
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 10
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 10
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 18
+      }
+    ]
+  },
+  "Weeping Essence of Greed": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 26
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 26
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 30
+      }
+    ]
+  },
+  "Wailing Essence of Greed": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 36
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 36
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 44
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Greed": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 64
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 54
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 64
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 44
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 59
+      }
+    ]
+  },
+  "Shrieking Essence of Greed": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 81
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 64
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 73
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 54
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 78
+      }
+    ]
+  },
+  "Deafening Essence of Greed": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Whispering Essence of Contempt": {
+    "itemLevelRestriction": 35,
+    "dropLevelMin": 1,
+    "dropLevelMax": 47,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 2
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 5
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 5
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 5
+      }
+    ]
+  },
+  "Muttering Essence of Contempt": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 13
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 13
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 13
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 10
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 13
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 13
+      }
+    ]
+  },
+  "Weeping Essence of Contempt": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 21
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 21
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 19
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 20
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 19
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 20
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 28
+      }
+    ]
+  },
+  "Wailing Essence of Contempt": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 29
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 29
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 35
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 44
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 35
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 35
+      }
+    ]
+  },
+  "Screaming Essence of Contempt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 46
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 46
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 64
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Contempt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 54
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 54
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 76
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Contempt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 65
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 65
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Muttering Essence of Sorrow": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 10
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 11
+      }
+    ]
+  },
+  "Weeping Essence of Sorrow": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 22
+      }
+    ]
+  },
+  "Wailing Essence of Sorrow": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Sorrow": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 55
+      }
+    ]
+  },
+  "Shrieking Essence of Sorrow": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Sorrow": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Muttering Essence of Anger": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 11
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 12
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 12
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 12
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 10
+      }
+    ]
+  },
+  "Weeping Essence of Anger": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 26
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 24
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 24
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 24
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 26
+      }
+    ]
+  },
+  "Wailing Essence of Anger": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 36
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 36
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 36
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Anger": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 62
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 60
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 60
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 60
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Anger": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 72
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 72
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 72
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Anger": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Bow",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 84
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 84
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 84
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Muttering Essence of Torment": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 13
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 10
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 10
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 13
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 13
+      }
+    ]
+  },
+  "Weeping Essence of Torment": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 26
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 26
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 26
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 26
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 28
+      }
+    ]
+  },
+  "Wailing Essence of Torment": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Torment": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 58
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 64
+      }
+    ]
+  },
+  "Shrieking Essence of Torment": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 74
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 76
+      }
+    ]
+  },
+  "Deafening Essence of Torment": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Muttering Essence of Fear": {
+    "itemLevelRestriction": 45,
+    "dropLevelMin": 12,
+    "dropLevelMax": 67,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 11
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 10
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 10
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 10
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 10
+      }
+    ]
+  },
+  "Weeping Essence of Fear": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 23
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 23
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 26
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 26
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 26
+      }
+    ]
+  },
+  "Wailing Essence of Fear": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 35
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 35
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Fear": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Fear": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Fear": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Weeping Essence of Suffering": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 21
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 21
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 29
+      }
+    ]
+  },
+  "Wailing Essence of Suffering": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 45
+      }
+    ]
+  },
+  "Screaming Essence of Suffering": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 58
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 53
+      }
+    ]
+  },
+  "Shrieking Essence of Suffering": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 74
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 77
+      }
+    ]
+  },
+  "Deafening Essence of Suffering": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 1
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Weeping Essence of Rage": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 22
+      }
+    ]
+  },
+  "Wailing Essence of Rage": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Rage": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 55
+      }
+    ]
+  },
+  "Shrieking Essence of Rage": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Rage": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Weeping Essence of Wrath": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 31
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 31
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 31
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 31
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 25
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 25
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 25
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 23
+      }
+    ]
+  },
+  "Wailing Essence of Wrath": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 37
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 37
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 37
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 36
+      }
+    ]
+  },
+  "Screaming Essence of Wrath": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 63
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 60
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 60
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 60
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 64
+      }
+    ]
+  },
+  "Shrieking Essence of Wrath": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 72
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 72
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 72
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 76
+      }
+    ]
+  },
+  "Deafening Essence of Wrath": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Melee Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 84
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 84
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 84
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Weeping Essence of Doubt": {
+    "itemLevelRestriction": 60,
+    "dropLevelMin": 30,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 20
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 26
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 26
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 29
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 20
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 30
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 29
+      }
+    ]
+  },
+  "Wailing Essence of Doubt": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 40
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 42
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 40
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Doubt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 60
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 56
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 56
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 60
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 56
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Doubt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 75
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 70
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 70
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 75
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 77
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 72
+      }
+    ]
+  },
+  "Deafening Essence of Doubt": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 85
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 85
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Wailing Essence of Anguish": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Anguish": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 62
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 58
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 64
+      }
+    ]
+  },
+  "Shrieking Essence of Anguish": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 74
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 76
+      }
+    ]
+  },
+  "Deafening Essence of Anguish": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Wailing Essence of Loathing": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 30
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 42
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 42
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 44
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 44
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 30
+      }
+    ]
+  },
+  "Screaming Essence of Loathing": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 44
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 58
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 58
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Shrieking Essence of Loathing": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 59
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 74
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 72
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 72
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Deafening Essence of Loathing": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 73
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Wailing Essence of Spite": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Screaming Essence of Spite": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 55
+      }
+    ]
+  },
+  "Shrieking Essence of Spite": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Spite": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Items",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Wailing Essence of Zeal": {
+    "itemLevelRestriction": 75,
+    "dropLevelMin": 48,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 45
+      },
+      {
+        "type": "Ranged Weapon",
+        "itemLevel": 42
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 11
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 30
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 42
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 42
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 42
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 42
+      }
+    ]
+  },
+  "Screaming Essence of Zeal": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 60
+      },
+      {
+        "type": "Ranged Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 22
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 40
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 56
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Zeal": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 77
+      },
+      {
+        "type": "Ranged Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 76
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 55
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 79
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Zeal": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Ranged Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 82
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Screaming Essence of Misery": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 55
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 55
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 55
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 60
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 55
+      }
+    ]
+  },
+  "Shrieking Essence of Misery": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 72
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 72
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 79
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 75
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 74
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 79
+      }
+    ]
+  },
+  "Deafening Essence of Misery": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "One Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Two Handed Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 1
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Screaming Essence of Dread": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Wand",
+        "itemLevel": 55
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 9
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 59
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 58
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 59
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 58
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 55
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 70
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 57
+      }
+    ]
+  },
+  "Shrieking Essence of Dread": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Wand",
+        "itemLevel": 82
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 64
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 73
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 74
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 73
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 74
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 77
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 71
+      }
+    ]
+  },
+  "Deafening Essence of Dread": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Melee Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Wand",
+        "itemLevel": 28
+      },
+      {
+        "type": "Bow",
+        "itemLevel": 64
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 82
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 28
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Screaming Essence of Scorn": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 59
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 1
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 1
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 59
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 45
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 45
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 58
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 44
+      }
+    ]
+  },
+  "Shrieking Essence of Scorn": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 76
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 1
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 1
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 76
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 59
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 59
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 74
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Deafening Essence of Scorn": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 1
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 1
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 82
+      },
+      {
+        "type": "Other Armour",
+        "itemLevel": 1
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 82
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Screaming Essence of Envy": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 68,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 58
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 56
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 50
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 56
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 58
+      }
+    ]
+  },
+  "Shrieking Essence of Envy": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 74
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 65
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 70
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 65
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 74
+      }
+    ]
+  },
+  "Deafening Essence of Envy": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 82
+      },
+      {
+        "type": "Armour",
+        "itemLevel": 81
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 82
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 81
+      },
+      {
+        "type": "Other Jewellery",
+        "itemLevel": 82
+      }
+    ]
+  },
+  "Essence of Hysteria": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 63
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 63
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 63
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 63
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 63
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 63
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 63
+      }
+    ]
+  },
+  "Essence of Insanity": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 63
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 63
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 63
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 63
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 63
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 63
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 63
+      }
+    ]
+  },
+  "Essence of Horror": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 63
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 63
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 63
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 63
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 63
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 63
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 63
+      }
+    ]
+  },
+  "Essence of Delirium": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 0,
+    "dropLevelMax": 0,
+    "isDroppable": false,
+    "modifiers": [
+      {
+        "type": "Weapon",
+        "itemLevel": 63
+      },
+      {
+        "type": "Gloves",
+        "itemLevel": 63
+      },
+      {
+        "type": "Boots",
+        "itemLevel": 63
+      },
+      {
+        "type": "Body Armour",
+        "itemLevel": 63
+      },
+      {
+        "type": "Helmet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Shield",
+        "itemLevel": 63
+      },
+      {
+        "type": "Quiver",
+        "itemLevel": 63
+      },
+      {
+        "type": "Amulet",
+        "itemLevel": 63
+      },
+      {
+        "type": "Ring",
+        "itemLevel": 63
+      },
+      {
+        "type": "Belt",
+        "itemLevel": 63
+      }
+    ]
+  },
+  "Remnant of Corruption": {
+    "itemLevelRestriction": null,
+    "dropLevelMin": 32,
+    "dropLevelMax": 100,
+    "isDroppable": true,
+    "modifiers": []
+  }
+}

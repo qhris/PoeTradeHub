@@ -111,12 +111,14 @@ namespace PoeTradeHub.UI.ViewModels
             _hotkeyService.Enable();
             _hotkeyService.DebugItem += HandleDebugItem;
             _hotkeyService.PriceItem += HandlePriceItem;
+            _hotkeyService.ItemInfo += HandleItemInfo;
         }
 
         protected override void OnDeactivate(bool close)
         {
             _hotkeyService.DebugItem -= HandleDebugItem;
             _hotkeyService.PriceItem -= HandlePriceItem;
+            _hotkeyService.ItemInfo -= HandleItemInfo;
             _hotkeyService.Disable();
 
             base.OnDeactivate(close);
@@ -126,7 +128,7 @@ namespace PoeTradeHub.UI.ViewModels
         {
             var viewModel = new ItemDebugViewModel();
             viewModel.ClipboardData = Clipboard.GetText();
-            viewModel.ItemData = ItemParser.DebugItem(eventArgs.Item);
+            viewModel.ItemData = JsonUtility.Serialize(eventArgs.Item);
 
             _windowManager.ShowWindow(viewModel);
         }
@@ -141,6 +143,23 @@ namespace PoeTradeHub.UI.ViewModels
             catch (NotImplementedException)
             {
                 MessageBox.Show("Sorry, pricing for this type of item has not been implemented yet.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void HandleItemInfo(object sender, ItemEventArgs eventArgs)
+        {
+            var item = eventArgs.Item;
+            if (item.ItemType == ItemType.Currency && item.Name.Contains("Essence of"))
+            {
+                try
+                {
+                    var viewModel = new EssenceInfoViewModel(item);
+                    _windowManager.ShowWindow(viewModel);
+                }
+                catch (NotImplementedException e)
+                {
+                    MessageBox.Show(e.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 

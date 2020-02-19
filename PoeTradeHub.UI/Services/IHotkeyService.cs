@@ -18,6 +18,11 @@ namespace PoeTradeHub.UI.Services
         event EventHandler<ItemEventArgs> PriceItem;
 
         /// <summary>
+        /// Event invoked when information about an item should be displayed.
+        /// </summary>
+        event EventHandler<ItemEventArgs> ItemInfo;
+
+        /// <summary>
         /// Enable all global hotkeys.
         /// </summary>
         void Enable();

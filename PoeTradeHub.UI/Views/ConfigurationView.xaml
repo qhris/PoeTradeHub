@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="ConfigurationView" Height="450" Width="800">
     <Grid>
-        <TextBlock>Configure application.</TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Configure application. TODO.</TextBlock>
     </Grid>
 </Window>

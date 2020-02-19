@@ -104,6 +104,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AutofacBootstrapper.cs" />
+    <Compile Include="Models\EssenceModel.cs" />
+    <Compile Include="Models\EssenceModifierModel.cs" />
     <Compile Include="ValueConverters\DebugConverter.cs" />
     <Compile Include="Models\ApplicationHotkeySettings.cs" />
     <Compile Include="Models\HotkeyBinding.cs" />
@@ -116,13 +118,18 @@
     <Compile Include="Services\ItemEventArgs.cs" />
     <Compile Include="Utility\Native.cs" />
     <Compile Include="Models\LeagueInfoModel.cs" />
+    <Compile Include="ValueConverters\LevelRequirementConverter.cs" />
     <Compile Include="ValueConverters\TimeSinceDateConverter.cs" />
     <Compile Include="ViewModels\ConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\EssenceInfoViewModel.cs" />
     <Compile Include="ViewModels\ItemDebugViewModel.cs" />
     <Compile Include="ViewModels\ItemListingViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\ConfigurationView.xaml.cs">
       <DependentUpon>ConfigurationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EssenceInfoView.xaml.cs">
+      <DependentUpon>EssenceInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ItemDebugView.xaml.cs">
       <DependentUpon>ItemDebugView.xaml</DependentUpon>
@@ -153,6 +160,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Data\processed_essences.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -177,6 +187,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\EssenceInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ItemDebugView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -193,5 +207,6 @@
   <ItemGroup>
     <Resource Include="Assets\TrayIcon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
