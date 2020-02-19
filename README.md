@@ -22,3 +22,7 @@ Make sure the game is running with the application started in the background. Ho
 - Dangerous mod list for maps
 - Rare item pricing
 - Pricing for expensive item bases
+
+## License
+
+Provided as-is under the MIT license. See [LICENSE](./LICENSE) for more information.
